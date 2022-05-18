@@ -1,0 +1,8 @@
+# path: ../datasets/papermath  # dataset root dir
+train: ../datasets/papermath/images/train  # train images (relative to 'path') 128 images
+val: ../datasets/papermath/images/train  # val images (relative to 'path') 128 images
+# test:  # test images (optional)
+
+# Classes
+nc: 1  # number of classes
+names: ['math']  # class names
