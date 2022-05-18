@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/semantic.css" media="screen" title="no title" charset="UTF-8">
+</head>
+<body>
+    
+    <div class="ui vertical segment">
+        <embed src={{page}} width="1700" height="2200"></embed>
+        <br>
+        <div class="ui buttons">
+            <div class="ui inverted labeled icon button">
+                <a href="/backward">Backward</a>
+            </div>
+            
+            <div class="ui inverted right labeled icon button">
+                <a href="/forward">Forward</a>
+            </div>
+            <form class="form-signin" method=post enctype=multipart/form-data>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">Upload</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div class="ui vertical very padded inverted segment">
+        <div class="ui grid">
+            <div class="eight wide column">
+                <div class="ui vertical inverted text menu">
+                        <h4 class="ui inverted header">Company</h4>
+                        <h4 class="ui inverted  header">Address: CN</h4>
+                        <h4 class="ui inverted  header">Tel: 023-52791372</h4>
+                </div>
+            </div>
+
+            <div class="eight wide column">
+                <div class="ui vertical inverted text menu">
+                    <div class="item">
+                        <h4 class="ui inverted  header">Company</h4>
+                    </div>
+                    <div class="item">
+                        <h4 class="ui inverted header">Address: CN</h4>
+                    </div>
+                    <div class="item">
+                        <h4 class="ui inverted header">Tel: 023-52791372</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="ui vertical very padded inverted segment">
+        <div class="ui grid">
+            <div class="eight wide column">
+                {% for name in namelist %}
+                    <div class="ui container segment">
+                        <div class="ui image">
+                            <img src={{name}} alt="" />
+                        </div>
+                        <br>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="eight wide column">
+                {% for form in formulalist %}
+                    <div class="ui container segment">
+                        <p>{{form}}</p>
+                        <br>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
