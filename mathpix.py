@@ -9,8 +9,8 @@ import re
 
 false = False
 true = True
-headers = { 'app_id':'xuhao_zhang_qq_com_127ced_838c89',
-            'app_key':'d27399dcd8e7cc92d49b0baadaef01c1f7a0248cdf0edf1310ec5efae687c71c',
+headers = { 'app_id':'',
+            'app_key':'',
             'Content-type': 'application/json'}
 
 
